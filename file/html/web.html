@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Record of Australia</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript">
+      // $(document).ready(function(){
+      //   $(".sydney>a").click(function(){
+      //     $(this).next("ul").toggleClass("hide");
+      //   });
+      // });
+      
+      function doDisplaySyd(){
+        var syd=document.getElementById("sydney");
+        if(syd.style.display=='none'){
+          syd.style.display='block';
+        }else{
+          syd.style.display='none';
+        }
+      }
+      function doDisplayGD(){ 
+        var gold=document.getElementById("gold");
+        if(gold.style.display=='none'){
+          gold.style.display='block';
+        }else{
+          gold.style.display='none';
+        }
+      }
+      function doDisplayBr(){ 
+        var bris=document.getElementById("bris");
+        if(bris.style.display=='none'){
+          bris.style.display='block';
+        }else{
+          bris.style.display='none';
+        }
+      }
+      function doDisplayCai(){ 
+        var cair=document.getElementById("cair");
+        if(cair.style.display=='none'){
+          cair.style.display='block';
+        }else{
+          cair.style.display='none';
+        }
+      }
+      
+      
+        // var sub=con.style.display
+        // if(sub.is("visible")){
+        //   sub.slideUp();
+        // }else{sub.slideDown();
+        // }
+      
+    </script>
+  </head>
+  <body>
+    <div class="layout">
+      <h1>Records<br>of<br>Australia</h1>
+      <ul class="list">   
+        <li>
+          <a href="javascript:doDisplaySyd();">Sydney</a>
+          <ul id="sydney">
+            <li>pictures</li>
+            <li>information</li>
+          </ul>
+        </li>
+        
+        <li><a href="javascript:doDisplayGD();">Gold Coast</a> 
+          <ul id="gold">
+            <li>pictures</li>
+            <li>information</li>
+          </ul> 
+        </li> 
+        <li><a href="javascript:doDisplayBr();">Brisbane</a> 
+          <ul id="bris">
+            <li>pictures</li>
+            <li>information</li>
+          </ul> 
+        </li> 
+        <li><a href="javascript:doDisplayCai();">Cairns</a>
+          <ul id="cair">
+            <li>pictures</li>
+            <li>information</li>
+          </ul> 
+        </li> 
+      </ul>
+      
+    </div>  
+
+    
+  
+  </body>
+  
+</html>

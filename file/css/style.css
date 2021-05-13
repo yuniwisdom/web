@@ -1,0 +1,68 @@
+body {
+  margin: 18px;
+  position: relative;
+  height: 100vh;
+  background: url("../images/img1.jpg") no-repeat center/cover;
+}
+
+.layout {
+  display: block;
+  width: 400px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+
+.list {
+  list-style: none;
+  font-size: 23px;
+  line-height: 3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h1 {
+  border-bottom: 1px solid white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 50px;
+  font-family: fantasy;
+}
+#sydney {
+  display: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#gold {
+  display: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+#bris {
+  display: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 20px;
+}
+#cair {
+  display: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 20px;
+}
