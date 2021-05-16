@@ -18,8 +18,63 @@ body {
   list-style: none;
   font-size: 23px;
   line-height: 3em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  background-clip: padding-box;
 }
+.sydney div {
+  padding-left: 40px;
+}
+
+.sydney div:hover {
+  padding:20px;
+  padding-left:40px;
+  background-color: #323232;
+  opacity: 0.9;
+  display: block;
+  background
+  
+}
+
+.gold div {
+  padding-left: 40px;
+}
+
+.gold div:hover {
+  padding:20px;
+  padding-left: 40px;
+  background-color: #323232;
+  opacity: 0.9;
+  display: block;
+}
+
+.bris div {
+  padding-left: 40px;
+}
+
+.bris div:hover {
+  padding:20px;
+  padding-left: 40px;
+  background-color: #323232;
+  opacity: 0.9;
+  display: block;
+}
+
+.cair div {
+  padding-left: 40px;
+}
+
+.cair div:hover {
+  padding:20px;
+  padding-left: 40px;
+  background-color: #323232;
+  opacity: 0.9;
+  display: block;
+}
+
 h1 {
   border-bottom: 1px solid white;
   margin: 10px;
@@ -33,7 +88,7 @@ h1 {
   font-size: 15px;
   list-style: none;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 
 a {
@@ -47,7 +102,7 @@ a {
   font-size: 15px;
   list-style: none;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 
 #bris {
@@ -56,7 +111,7 @@ a {
   font-size: 15px;
   list-style: none;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 #cair {
   display: none;
@@ -64,5 +119,19 @@ a {
   font-size: 15px;
   list-style: none;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 60px;
+}
+
+
+.hide {
+  display: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 60px;
+}
+
+#sydney a:hover{
+  color:#464646;
 }
