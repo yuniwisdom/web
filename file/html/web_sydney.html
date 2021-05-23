@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Records of Sydney</title>
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+
+        function zoomIn(event) {
+            event.target.style.transform = "scale(1.2)";
+            event.target.style.zIndex = 1;
+            event.target.style.transition = "all 0.5s";
+        }
+
+        function zoomOut(event) {
+            event.target.style.transform = "scale(1)";
+            event.target.style.zIndex = 0;
+            event.target.style.transition = "all 0.5s";
+        }
+
+        function popup(event) {
+            if (event.target.style.width = "50%") {
+                event.target.style.width = "100%";
+
+            }
+            else {
+                event.target.style.width = "50%";
+            }
+        }
+        function popupp(event) {
+            if (event.target.style.width = "100%") {
+                event.target.style.width = "50%";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div class="grid">
+        <header class="header">
+            <a href="web.html">Home</a>
+            <img class="img" src="../images/sydney.png">
+        </header>
+        <main class="city">
+            <h1>Sydney</h1>
+            <P>#OperaHouse<br>
+                #HarbourBridge<br>
+                #St.Mary'sCathedral<br>
+                #BlueMountain<br>
+                #FeatherdaleWildPark<br>
+                #ArtGalleryOfNSW<br>
+                #DarlingHarbour
+            </P>
+        </main>
+        <div class="pictures">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <img class="spictures1" src="../images/sydney4.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)" onclick="popup(event)" onclick="popupp(evnet)">
+                <img class="spictures2" src="../images/sydney3.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)" onclick="popup(event)">
+                <img class="spictures3" src="../images/sydney14.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures4" src="../images/sydney5.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <img class="spictures5" src="../images/sydney9.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures6" src="../images/sydney11.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures7" src="../images/sydney17.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures8" src="../images/sydney8.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <img class="spictures9" src="../images/sydney10.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures10" src="../images/sydney19.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures11" src="../images/sydney22.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures12" src="../images/sydney25.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <img class="spictures13" src="../images/sydney27.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures14" src="../images/sydney28.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures11" src="../images/sydney26.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                <img class="spictures12" src="../images/sydney7.jpg" onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+            </div>
+
+            <div id="bigpictures">
+
+
+            </div>
+
+            <!-- <img class="spictures" src="../images/sydney13.jpg"
+                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img class="spictures" src="../images/sydney10.jpg"
+                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img class="spictures" src="../images/sydney15.jpg"
+                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"> -->
+            <!-- <img src="../images/sydney16.jpg">
+                <img src="../images/sydney17.jpg">
+                <img src="../images/sydney18.jpg">
+                <img src="../images/sydney19.jpg">
+                <img src="../images/sydney20.jpg">
+                <img src="../images/sydney21.jpg">
+                <img src="../images/sydney22.jpg">
+                <img src="../images/sydney23.jpg">
+                <img src="../images/sydney24.jpg">
+                <img src="../images/sydney25.jpg"> -->
+
+
+            </main>
+            <footer class="footer">푸터</footer>
+        </div>
+
+        <script>
+            AOS.init();
+        </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

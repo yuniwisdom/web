@@ -1,0 +1,130 @@
+body {
+  background-color: #101314;
+}
+
+.grid {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "city pictures"
+    "footer footer";
+}
+
+.grid .header {
+  grid-area: header;
+  position: fixed;
+}
+.grid .city {
+  grid-area: city;
+}
+.grid .pictures {
+  grid-area: pictures;
+  padding: 0px;
+  padding-top: 100px;
+  margin-left: 20px;
+}
+.grid .footer {
+  grid-area: footer;
+}
+
+.header {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px;
+  color: rgb(210, 216, 223);
+  padding: 10px;
+  width: 100%;
+  border-bottom: rgb(210, 216, 223) 2px solid;
+  font-size: 20px;
+  background-color: #101314;
+  z-index: 3;
+}
+
+.header a {
+  text-align: left;
+  text-decoration: none;
+  color: rgb(221, 227, 235);
+}
+
+.header .img {
+  position: fixed;
+  right: 15px;
+  top: 16px;
+  width: 50px;
+  z-index: 4;
+}
+
+.city {
+  position: fixed;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  height: 80%;
+  font-size: 30px;
+  color: rgb(210, 216, 223);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: content-box;
+  height: 500px;
+  width: 250px;
+  border: rgb(210, 216, 223) solid 1px;
+}
+
+.city p {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 10%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.spictures {
+  display: flexbox;
+}
+
+.spictures1,
+.spictures5,
+.spictures9 {
+  position: relative;
+  left: 150px;
+  width: 50%;
+  padding: 5px;
+}
+
+.spictures2,
+.spictures6,
+.spictures10 {
+  position: relative;
+  left: 150px;
+  width: 25%;
+  padding: 5px;
+}
+
+.spictures3,
+.spictures7,
+.spictures11,
+.spictures15 {
+  position: relative;
+  left: 150px;
+  width: 25%;
+  padding: 5px;
+}
+
+.spictures4,
+.spictures8,
+.spictures12,
+.spictures16 {
+  position: relative;
+  left: 150px;
+  width: 50%;
+  padding: 5px;
+}
+
+.spictures13,
+.spictures14 {
+  position: relative;
+  left: 150px;
+  width: 37.5%;
+  padding: 5px;
+}
