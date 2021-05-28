@@ -9,6 +9,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script>
 
         function zoomIn(event) {
@@ -38,6 +41,13 @@
             }
         }
 
+        lightbox.option({
+            resizeDuration: 200,
+            wrapAround: true,
+            disableScrolling: false,
+            fitImagesInViewport: false
+        })
+
     </script>
 
 </head>
@@ -49,7 +59,7 @@
     <div class="grid">
         <header class="header">
             <a href="web.html">Home</a>
-            <img class="img" src="../images/sydney.png">
+            <img class="img" src="../images/aus.png">
         </header>
         <main class="city">
             <h1>Sydney</h1>
@@ -64,71 +74,85 @@
         </main>
         <div class="pictures">
             <div data-aos="fade-up" data-aos-duration="2000">
-                <img class="spictures1" src="../images/sydney4.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)" onclick="popup(event)" onclick="popupp(evnet)">
-                <img class="spictures2" src="../images/sydney3.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)" onclick="popup(event)">
-                <img class="spictures3" src="../images/sydney14.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures4" src="../images/sydney5.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
+                <a href="../images/sydney4.jpg" data-title="#HarbourBridge" data-lightbox="example-set">
+                    <img class="spictures1" src="../images/sydney4.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney3.jpg" data-title="#OperaHouse" data-lightbox="example-set">
+                    <img class="spictures2" src="../images/sydney3.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney14.jpg" data-title="#Palmtree" data-lightbox="example-set">
+                    <img class="spictures3" src="../images/sydney14.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney5.jpg" data-title="#Sea" data-lightbox="example-set">
+                    <img class="spictures4" src="../images/sydney5.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="2000">
-                <img class="spictures5" src="../images/sydney9.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures6" src="../images/sydney11.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures7" src="../images/sydney17.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures8" src="../images/sydney8.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
+                <a href="../images/sydney9.jpg" data-title="#OperaHouse" data-lightbox="example-set">
+                    <img class="spictures5" src="../images/sydney9.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney11.jpg" data-title="#St.Mary'sCathedral" data-lightbox="example-set">
+                    <img class="spictures6" src="../images/sydney11.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney17.jpg" data-title="#Sea" data-lightbox="example-set">
+                    <img class="spictures7" src="../images/sydney17.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney8.jpg" data-title="#Sea" data-lightbox="example-set">
+                    <img class="spictures8" src="../images/sydney8.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="2000">
-                <img class="spictures9" src="../images/sydney10.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures10" src="../images/sydney19.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures11" src="../images/sydney22.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures12" src="../images/sydney25.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
+                <a href="../images/sydney10.jpg" data-title="#HarbourBridge #OperaHouse" data-lightbox="example-set">
+                    <img class="spictures9" src="../images/sydney10.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney19.jpg" data-title="#ArtGalleryOfNSW" data-lightbox="example-set">
+                    <img class="spictures10" src="../images/sydney19.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney22.jpg" data-title="" data-lightbox="example-set">
+                    <img class="spictures11" src="../images/sydney22.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney25.jpg" data-title="#DarlingHarbour" data-lightbox="example-set">
+                    <img class="spictures12" src="../images/sydney25.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="2000">
-                <img class="spictures13" src="../images/sydney27.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures14" src="../images/sydney28.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures11" src="../images/sydney26.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
-                <img class="spictures12" src="../images/sydney7.jpg" onmouseenter="zoomIn(event)"
-                    onmouseleave="zoomOut(event)">
+                <a href="../images/sydney27.jpg" data-title="#OperaHouse" data-lightbox="example-set">
+                    <img class="spictures13" src="../images/sydney27.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney28.jpg" data-title="#HarbourBridge" data-lightbox="example-set">
+                    <img class="spictures14" src="../images/sydney28.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney26.jpg" data-title="#DarlingHarbour" data-lightbox="example-set">
+                    <img class="spictures11" src="../images/sydney26.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
+                <a href="../images/sydney7.jpg" data-title="#Seagull" data-lightbox="example-set">
+                    <img class="spictures12" src="../images/sydney7.jpg" onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)">
+                </a>
             </div>
 
             <div id="bigpictures">
 
 
             </div>
-
-            <!-- <img class="spictures" src="../images/sydney13.jpg"
-                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-                <img class="spictures" src="../images/sydney10.jpg"
-                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-                <img class="spictures" src="../images/sydney15.jpg"
-                onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"> -->
-            <!-- <img src="../images/sydney16.jpg">
-                <img src="../images/sydney17.jpg">
-                <img src="../images/sydney18.jpg">
-                <img src="../images/sydney19.jpg">
-                <img src="../images/sydney20.jpg">
-                <img src="../images/sydney21.jpg">
-                <img src="../images/sydney22.jpg">
-                <img src="../images/sydney23.jpg">
-                <img src="../images/sydney24.jpg">
-                <img src="../images/sydney25.jpg"> -->
-
 
             </main>
             <footer class="footer">푸터</footer>

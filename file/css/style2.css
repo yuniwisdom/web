@@ -1,6 +1,9 @@
 body {
   background-color: #101314;
+  margin-top:0px;
 }
+
+
 
 .grid {
   width: auto;
@@ -33,9 +36,11 @@ body {
   display: block;
   font-family: "Courier New", Courier, monospace;
   margin: 10px;
+  margin-top:0px;
   color: rgb(210, 216, 223);
   padding: 10px;
-  width: 100%;
+  padding-top:20px;
+  width: 95%;
   border-bottom: rgb(210, 216, 223) 2px solid;
   font-size: 20px;
   background-color: #101314;
@@ -50,8 +55,8 @@ body {
 
 .header .img {
   position: fixed;
-  right: 15px;
-  top: 16px;
+  right: 3%;
+  top: 11px;
   width: 50px;
   z-index: 4;
 }
